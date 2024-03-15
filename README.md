@@ -1,4 +1,4 @@
-Latest release and change log here: https://github.com/olkal/HX711_ADC/releases
+Latest release and change log here: https://github.com/olkal/HX711_ADC/releases i
 
 This an Arduino library for the HX711 24-bit ADC for weight scales.
 Data retrieval from the HX711 is done without blocking the mcu, also on the 10SPS rate setting and with Multiple HX711's performing conversions simultaneously.
