@@ -86,10 +86,11 @@ class HX711_ADC
 		float getNewCalibration(float known_mass);	//returns and sets a new calibration value (calFactor) based on a known mass input
 		bool getSignalTimeoutFlag();				//returns 'true' if it takes longer time then 'SIGNAL_TIMEOUT' for the dout pin to go low after a new conversion is started
 		void setReverseOutput();					//reverse the output value
+		long smoothedData();                                            //returns the smoothed data value calculated from the dataset
 
 	protected:
 		void conversion24bit(); 					//if conversion is ready: returns 24 bit data and starts the next conversion
-		long smoothedData();						//returns the smoothed data value calculated from the dataset
+		//long smoothedData();						//returns the smoothed data value calculated from the dataset
 		uint8_t sckPin; 							//HX711 pd_sck pin
 		uint8_t doutPin; 							//HX711 dout pin
 		uint8_t GAIN;								//HX711 GAIN
